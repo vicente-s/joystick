@@ -38,9 +38,3 @@
   color: white;
   text-align: center;
 }
-
-.btn {
-    &:hover{
-      color:red;
-    };
-}

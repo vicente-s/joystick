@@ -67,5 +67,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-* Start landing page
-* Make the rows with system names
+#To Do
+  -Create Routes for each systems show page
+  -Create wireframe for systems show page
+  -make successful for system name, release date

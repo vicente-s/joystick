@@ -19,6 +19,7 @@ class App extends Component {
         <div className="row">
             {systemRow}
         </div>
+        <hr />
       </div>
     );
   }
