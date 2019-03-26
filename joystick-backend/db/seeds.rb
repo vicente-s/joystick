@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #Systems
-playstation = System.create({name:"PlayStation"})
-#Games
-spider_man = Game.create({name:"Spider-Man"})
-#Releases
-test_release = Release.create({system_id: 1, game_id: 1})
+# playstation = System.create({name:"PlayStation"})
+# #Games
+# spider_man = Game.create({name:"Spider-Man"})
+# #Releases
+# test_release = Release.create({system_id: 1, game_id: 1})
