@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component, Ro } from 'react';
 import './App.css';
+import SystemColumn from './components/SystemColumn'
 
 class App extends Component {
+
+  goToPage(e) {
+    {/*window.location.href = */}
+    console.log(window.location.href + e.target.innerHTML)
+  }
+
   render() {
-    let currentSystems = ["Playstation 4", "Xbox One", "Nintendo Switch", "Mobile"]
-    let systemRow = currentSystems.map(system =>
-      <div className="col">
-        <button className="btn">{system}</button>
-      </div>
-    )
+    let currentSystems = ["PlayStation", "Xbox", "Nintendo"]
+    let systemsRow = currentSystems.map(system => <SystemColumn goToPage={this.goToPage} key={currentSystems.indexOf(system) + 1} system={system}/>)
 
     return (
       <div className="App">
@@ -17,7 +19,7 @@ class App extends Component {
           <button className="btn btn-default">gamesGalore</button>
         </div>
         <div className="row">
-            {systemRow}
+          {systemsRow}
         </div>
         <hr />
       </div>
