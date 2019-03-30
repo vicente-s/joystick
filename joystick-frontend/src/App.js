@@ -1,8 +1,18 @@
 import React, { Component, Ro } from 'react';
+import axios from 'axios'
 import './App.css';
 import SystemColumn from './components/SystemColumn'
 
 class App extends Component {
+
+  state = {
+    systems: []
+  }
+
+  componentDidMount() {
+    console.log("In Did Mount")
+    axios.get('https://api-v3.igdb.com/games').then(res => console.log)
+  }
 
   goToPage(e) {
     {/*window.location.href = */}
@@ -16,7 +26,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="shadow-lg p-3 mb-5 bg-white rounded">
-          <button className="btn btn-default">gamesGalore</button>
+          <button className="btn btn-default">joyStick</button>
         </div>
         <div className="row">
           {systemsRow}
