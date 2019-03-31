@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Link, Switch, Route} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 import Home from './components/Home'
 import SystemPage from './components/SystemPage'
 
@@ -8,12 +8,15 @@ import SystemPage from './components/SystemPage'
 class App extends Component {
 
   state = {
-    system: {},
+    system: "",
     systems: ["Playstation", "Xbox", "Nintendo"]
   }
 
-  goToPage(e) {
-    {/*window.location.href = */}
+  selectSystem = (e) => {
+    this.setState({
+      system: e.target.innerHTML
+    })
+    console.log(this.state)
   }
 
   render() {
@@ -21,8 +24,8 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path='/' render={(props) => (<Home systems={this.state.systems}/>)} />
-          <Route exact path='/system' render={(props) => (<SystemPage />)} />
+          <Route exact path='/' render={(props) => (<Home systems={this.state.systems} selectSystem={this.selectSystem}/>)} />
+          <Route exact path='/system' render={(props) => (<SystemPage system={this.state.system}/>)} />
         </Switch>
       </div>
     );

@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
+import { Link } from 'react-router-dom'
 
 class SystemColumn extends Component {
     render() {
       return (
-              <div className="col" onClick={this.props.goToPage}>
-                <button className="btn" onClick={this.props.goToPage}>{this.props.system}</button>
+              <div className="col" >
+                <button className="btn" onClick={this.props.selectSystem}>{this.props.system}</button>
               </div>)
             }
 }

@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 
 class SystemPage extends Component {
   render() {
+      {console.log(this.props.system)}
     return(
-      /*console.log(this.props.system)*/
       <div>
         <h1> SystemPage! </h1>
       </div>
