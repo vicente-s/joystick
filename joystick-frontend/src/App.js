@@ -1,7 +1,7 @@
-import React, { Component, Ro } from 'react';
-import axios from 'axios'
+import React, { Component,} from 'react';
 import './App.css';
 import SystemColumn from './components/SystemColumn'
+import {Link} from 'react-router-dom'
 
 class App extends Component {
 
@@ -9,19 +9,13 @@ class App extends Component {
     systems: []
   }
 
-  componentDidMount() {
-    console.log("In Did Mount")
-    axios.get('https://api-v3.igdb.com/games').then(res => console.log)
-  }
-
   goToPage(e) {
     {/*window.location.href = */}
-    console.log(window.location.href + e.target.innerHTML)
   }
 
   render() {
     let currentSystems = ["PlayStation", "Xbox", "Nintendo"]
-    let systemsRow = currentSystems.map(system => <SystemColumn goToPage={this.goToPage} key={currentSystems.indexOf(system) + 1} system={system}/>)
+    let systemsRow = currentSystems.map(system => <Link to={system}><SystemColumn className="col" goToPage={this.goToPage} key={currentSystems.indexOf(system) + 1} system={system}/></Link>)
 
     return (
       <div className="App">
