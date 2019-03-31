@@ -1,7 +1,10 @@
 import React, {Component} from 'react'
+import SystemColumn from './SystemColumn'
 
 class Home extends Component {
+
   render() {
+
     return (
       <div className="App">
         <div className="shadow-lg p-3 mb-5 bg-white rounded">
