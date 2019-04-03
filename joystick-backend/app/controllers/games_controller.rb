@@ -1,6 +1,9 @@
+require 'net/https'
+
 class GamesController < ApplicationController
 
   def index
-    @games = Game.all
+
+    #make a request for the games enpoint
   end
 end
