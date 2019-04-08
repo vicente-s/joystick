@@ -43,3 +43,7 @@
   /* background-image: url('https://m.media-amazon.com/images/M/MV5BMDIyYmEwNmMtZDg4MC00NGZlLWI3MjEtMDA1MzE0MDI0OThiXkEyXkFqcGdeQXVyNjQzNjE5MjA@._V1_.jpg');
   height: 1000px; */
 }
+
+.gameCard {
+  width: 19rem;
+}

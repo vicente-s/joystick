@@ -3,7 +3,7 @@ import './App.css';
 import {Switch, Route} from 'react-router-dom'
 import Home from './components/Home'
 import Systems from './components/Systems'
-import SystemPage from './components/SystemPage'
+import Games from './components/Games'
 
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' render={(props) => (<Home systems={this.state.systems} selectSystem={this.selectSystem}/>)} />
           <Route exact path='/systems' render={(props) => (<Systems />)} />
-          <Route exact path={`/${this.state.systems[0]}`} render={(props) => (<SystemPage system={this.state.system}/>)} />
+          <Route exact path='/games' render={(props) => (<Games />)} />
         </Switch>
       </div>
     );
