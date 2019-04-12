@@ -12,6 +12,9 @@ class Home extends Component {
         </div>
         <div className="row">
           {systemsRow}
+          <div className="col">
+            <button className="btn">All Systems</button>
+          </div>
         </div>
         <hr/>
         <div className="GameDisplay">
