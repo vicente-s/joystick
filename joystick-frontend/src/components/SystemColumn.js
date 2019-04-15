@@ -6,7 +6,7 @@ class SystemColumn extends Component {
       console.log(this.props.system)
       return (
               <div className="col" >
-                <button className="btn" onClick={this.props.selectSystem}>{this.props.system}</button>
+                <a href={this.props.system}>{this.props.system}</a>
               </div>)
             }
 }

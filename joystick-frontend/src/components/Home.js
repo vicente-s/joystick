@@ -13,7 +13,7 @@ class Home extends Component {
         <div className="row">
           {systemsRow}
           <div className="col">
-            <button className="btn">All Systems</button>
+            <a href="systems">Systems</a>
           </div>
         </div>
         <hr/>
