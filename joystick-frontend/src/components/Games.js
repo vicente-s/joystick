@@ -14,12 +14,12 @@ class Games extends Component {
     {/* make a function to make fetches*/}
     console.log(this.state)
     let games = this.state.games.map(game =>
-      <div className="container">
-
+      <div key={game.id} className="container">
         <div className="card-body">
           <h5 className="card-title">{game.name}</h5>
           <p className="card-text">{game.summary}</p>
-          <a href="" class="btn btn-primary">More info</a>
+          {/* needs to go to the games show page*/}
+          <a href={`games/${game.id}`} className="btn btn-primary">More info</a>
         </div>
         <hr/>
       </div>
