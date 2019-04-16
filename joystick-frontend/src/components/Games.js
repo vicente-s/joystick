@@ -14,18 +14,22 @@ class Games extends Component {
     {/* make a function to make fetches*/}
     console.log(this.state)
     let games = this.state.games.map(game =>
-      <div className="card gameCard container">
+      <div className="container">
 
         <div className="card-body">
           <h5 className="card-title">{game.name}</h5>
           <p className="card-text">{game.summary}</p>
           <a href="" class="btn btn-primary">More info</a>
         </div>
+        <hr/>
       </div>
     )
     return (
       <div>
-      {games}
+        <div className="navbar sticky-top">
+        Games
+        </div>
+        {games}
       </div>
     )
   }
