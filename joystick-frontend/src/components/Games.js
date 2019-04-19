@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Game from './Game'
 
 class Games extends Component {
   state = {
@@ -11,7 +12,6 @@ class Games extends Component {
   }
 
   render() {
-    {/* make a function to make fetches*/}
     console.log(this.state)
     let games = this.state.games.map(game =>
       <div key={game.id} className="container">

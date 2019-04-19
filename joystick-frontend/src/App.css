@@ -40,8 +40,9 @@
 }
 
 .GameDisplay {
-  /* background-image: url('https://m.media-amazon.com/images/M/MV5BMDIyYmEwNmMtZDg4MC00NGZlLWI3MjEtMDA1MzE0MDI0OThiXkEyXkFqcGdeQXVyNjQzNjE5MjA@._V1_.jpg');
-  height: 1000px; */
+  background-image: url('https://www.philosophytalk.org/system/files/0d7c8c6a3a60f9a29dda44de48c5b34f.jpg');
+  height: 500px;
+  opacity: 0.5;
 }
 
 .gameCard {
