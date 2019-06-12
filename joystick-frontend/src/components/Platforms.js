@@ -2,13 +2,13 @@ import React, {Component} from 'react'
 
 export default class Platforms extends Component {
   state = {
-    platforms :  []
+    platforms: []
   }
 
   componentDidMount() {
     fetch('http://localhost:3000/systems')
-    .then(resp => resp.json())
-    .then(json => this.setState({platforms:json}))
+    .then(response => response.json())
+    .then(json => this.setState({platforms: json}))
   }
 
   render() {
