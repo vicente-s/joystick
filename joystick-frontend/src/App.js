@@ -3,19 +3,12 @@ import './App.css';
 import {Switch, Route} from 'react-router-dom'
 import Home from './components/Home'
 import Platforms from './components/Platforms'
+import Platform from './components/Platform'
 import Games from './components/Games'
 import Game from './components/Game'
 
 
 class App extends Component {
-
-  state = {
-    system: "",
-    systems: ["Playstation", "Xbox", "Nintendo"],
-    game : {
-      id: 21
-    }
-  }
 
   selectSystem = (e) => {
     console.log(e.target.innerHTML)
@@ -30,10 +23,11 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path='/' render={(props) => (<Home systems={this.state.systems} selectSystem={this.selectSystem}/>)} />
-          <Route exact path='/platforms' render={(props) => (<Platforms />)} />
-          <Route exact path='/games' render={(props) => (<Games />)} />
-          <Route exact path='/games/23' render={(props) => (<Game />)} />
+          <Route exact path='/' render={(props) => (<Home selectSystem={this.selectSystem}/>)} />
+          <Route exact path='/platforms' render={() => (<Platforms />)} />
+          <Route exact path='/platform' render={() => <Platform />} />
+          <Route exact path='/games' render={() => (<Games />)} />
+          <Route exact path='/game' render={() => (<Game />)} />
         </Switch>
       </div>
     );

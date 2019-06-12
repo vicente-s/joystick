@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 
 class Game extends Component {
   state = {
-    system: "Playstation"
+    game: "Stick Fighter II"
   }
   render() {
-    return <h1> {this.state.system}'s Page </h1>
+    return <h1> This is {this.state.game}'s' Page </h1>
   }
 }
 
