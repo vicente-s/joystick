@@ -18,7 +18,7 @@ export default class Platforms extends Component {
             <h5 className="card-title">{platform.name}</h5>
             <p className="card-text">{platform.summary}</p>
             {/* needs to be a link to games show page*/}
-            <a href="/platform" class="btn btn-primary">More info</a>
+            <button class="btn btn-primary">More info</button>
           </div>
         </div>
     )
