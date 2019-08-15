@@ -1,2 +1,3 @@
 class ReleasesController < ApplicationController
+
 end
