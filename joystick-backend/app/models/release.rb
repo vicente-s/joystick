@@ -1,4 +1,4 @@
 class Release < ApplicationRecord
-  belongs_to :system
+  belongs_to :platform
   belongs_to :game
 end

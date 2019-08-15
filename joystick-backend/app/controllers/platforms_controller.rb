@@ -1,4 +1,4 @@
-class SystemsController < ApplicationController
+class PlatformsController < ApplicationController
   require 'net/https'
 
   def index

@@ -1,2 +1,2 @@
-module SystemsHelper
+module PlatformsHelper
 end
